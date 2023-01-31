@@ -1,0 +1,228 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    {% include 'navbar.html' %}
+    {% block content %}
+    <style>
+      body{
+            background-image: url('/static/images/img1.webp'); width: 500; height: 500; background-repeat: no-repeat; background-size: cover; 
+        }
+        script{
+          background-image: url('/static/images/back1.jpg'); width: 500; height: 500; background-repeat: no-repeat; background-size: cover; 
+        }
+     
+    </style>
+    <!-- <h2 class="text-center">Home Page</h2> -->
+    <main role="main">
+      <section data-bs-version="5.1" class="features5 cid-sQksAAuZhK" id="features014-3">
+
+
+
+    <div class="container">
+        <div class="row justify-content-center text-light">
+            <div class="col-12 title-col pb-5">
+                <h2 class="main-title align-center mbr-black  font-weight-bold text-success display-2"><strong>Our Features</strong></h2>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mr-5 " style="width: 340px; height: 340px; border-radius: 30px; box-shadow: 0px 0px 20px cyan; background-color: aqua; ">
+                <div class="card-wrapper" >
+                    <div class="card-box align-left mt-4" >
+                        <span class="mbr-iconfont mobi-mbri-layers mobi-mbri " ></span>
+                        <h4 class="card-title align-left mbr-black mb-3 mbr-fonts-style text-center text-light" style=" padding:10px; border-radius: 20px; box-shadow: 0px 0px 30px yellow; background-color: black;"><strong >Python</strong></h4>
+                        <p class="card-text mbr-fonts-style text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            eiusmod tempor incididunt.<br></p>
+                        <a href="contact" class="text-light" style=" padding:10px; border-radius: 20px; box-shadow: 0px 0px 10px blue; background-color: blue;">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mr-5 " style="width: 340px; height: 340px; border-radius: 30px; box-shadow: 0px 0px 20px cyan; background-color: aqua; ">
+                <div class="card-wrapper" >
+                    <div class="card-box align-left mt-4" >
+                        <h4 class="card-title align-left mbr-black mb-3 mbr-fonts-style text-center text-light"style=" padding:10px; border-radius: 20px; box-shadow: 0px 0px 30px yellow; background-color: black;"><strong >Full Stack Python</strong></h4>
+                        <p class="card-text mbr-fonts-style text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            eiusmod tempor incididunt.<br></p>
+                        <a href="contact" class="text-light" style=" padding:10px; border-radius: 20px; box-shadow: 0px 0px 10px blue; background-color: blue;">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mr-5 " style="width: 340px; height: 340px; border-radius: 30px; box-shadow: 0px 0px 20px cyan; background-color: aqua; ">
+                <div class="card-wrapper" >
+                    <div class="card-box align-left mt-4" >
+                        <span class="mbr-iconfont mobi-mbri-layers mobi-mbri " ></span>
+                        <h4 class="card-title align-left mbr-black mb-3 mbr-fonts-style text-center text-light" style=" padding:10px; border-radius: 20px; box-shadow: 0px 0px 30px yellow; background-color: black;"><strong >MySQL</strong></h4>
+                        <p class="card-text mbr-fonts-style text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            eiusmod tempor incididunt.<br></p>
+                        <a href="contact" class="text-light" style=" padding:10px; border-radius: 20px; box-shadow: 0px 0px 10px blue; background-color: blue;">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mr-5 mt-3 " style="width: 340px; height: 340px; border-radius: 30px; box-shadow: 0px 0px 20px cyan; background-color: aqua; ">
+                <div class="card-wrapper" >
+                    <div class="card-box align-left mt-4" >
+                        <span class="mbr-iconfont mobi-mbri-layers mobi-mbri " ></span>
+                        <h4 class="card-title align-left mbr-black mb-3 mbr-fonts-style text-center text-light" style=" padding:10px; border-radius: 20px; box-shadow: 0px 0px 30px yellow; background-color: black;"><strong >UI</strong></h4>
+                        <p class="card-text mbr-fonts-style text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            eiusmod tempor incididunt.<br></p>
+                        <a href="contact" class="text-light" style=" padding:10px; border-radius: 20px; box-shadow: 0px 0px 10px blue; background-color: blue;">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mt-3 mr-5 " style="width: 340px; height: 340px; border-radius: 30px; box-shadow: 0px 0px 20px cyan; background-color: aqua; ">
+                <div class="card-wrapper" >
+                    <div class="card-box align-left mt-4" >
+                        <span class="mbr-iconfont mobi-mbri-layers mobi-mbri " ></span>
+                        <h4 class="card-title align-left mbr-black mb-3 mbr-fonts-style text-center text-light" style=" padding:10px; border-radius: 20px; box-shadow: 0px 0px 30px yellow; background-color: black;"><strong >Django</strong></h4>
+                        <p class="card-text mbr-fonts-style text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            eiusmod tempor incididunt.<br></p>
+                        <a href="contact" class="text-light" style=" padding:10px; border-radius: 20px; box-shadow: 0px 0px 10px blue; background-color: blue;">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mt-3 mr-5 " style="width: 340px; height: 340px; border-radius: 30px; box-shadow: 0px 0px 20px cyan; background-color: aqua; ">
+                <div class="card-wrapper" >
+                    <div class="card-box align-left mt-4" >
+                        <span class="mbr-iconfont mobi-mbri-layers mobi-mbri " ></span>
+                        <h4 class="card-title align-left mbr-black mb-3 mbr-fonts-style text-center text-light" style=" padding:10px; border-radius: 20px; box-shadow: 0px 0px 30px yellow; background-color: black;"><strong >Flask</strong></h4>
+                        <p class="card-text mbr-fonts-style text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            eiusmod tempor incididunt.<br></p>
+                        <a href="contact" class="text-light" style=" padding:10px; border-radius: 20px; box-shadow: 0px 0px 10px blue; background-color: blue;">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+      <div class="container">
+        <div class="row">
+          <div class="offset-md-3 col-md-6 mt-4">
+            <h1 class="text-center" style="margin: 50px; box-shadow: 0px 0px 10px red; padding: 10px; border-radius: 40px; background-color: cyan;">Co-Founder of NTH</h1>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="album py-5 bg-light md-5"> -->
+        <div class="container md-5">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow" style="border-radius: 30px; box-shadow: 0px 0px 25px yellow;  background-color: green;">
+                <h4 class="font font-weight-bold text-light text-center" style="padding: 12px; border-radius: 30px; background-color: blue;"> Mr. Ratan Tata</h4>
+                <img class="card-img-top ml-1 md-2" src="static/images/ratan.jpg" style="width: 340px; height: 340px; border-radius: 30px;" alt="Card image cap">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <footer class="text-light">
+                      <h4> Exp : 50year</h4>
+                      <h4> Skill : Tata </h4>
+                    </footer>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow" style="border-radius: 30px; box-shadow: 0px 0px 25px yellow; background-color: green;">
+                <h4 class="font font-weight-bold text-light text-center" style="padding: 12px; border-radius: 30px; background-color: blue;"> Mr. Sundar Pichai</h4>
+                <img class="card-img-top ml-1 md-2" src="static/images/sundar.jpg" style="width: 340px; height: 340px; border-radius: 30px;" alt="Card image cap">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <footer class="text-light">
+                      <h4> Exp : 45year</h4>
+                      <h4> Skill : Google </h4>
+                    </footer>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow" style="border-radius: 30px; box-shadow: 0px 0px 25px yellow; background-color: green;">
+                <h4 class="font font-weight-bold text-light text-center" style="padding: 12px; border-radius: 30px; background-color: blue;"> Mr. Jeff Bezos</h4>
+                <img class="card-img-top ml-1 md-2" src="static/images/jeff.webp" style="width: 340px; height: 340px; border-radius: 30px;" alt="Card image cap">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <footer class="text-light">
+                      <h4> Exp : 42year</h4>
+                      <h4> Skill : Amazon </h4>
+                    </footer>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6 mr-5">
+                  <h1 class="text-center text-light" style="margin: 50px; box-shadow: 0px 0px 15px cyan; padding: 10px; border-radius: 40px; background-color: rgb(159, 9, 116);">Student Achivement NTH</h1>
+                </div>
+      
+              </div>
+      
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow" style="border-radius: 30px; box-shadow: 0px 0px 20px yellow; background-image: url('/static/images/back2.jpg'); width: 500; height: 500; background-repeat: no-repeat; background-size: cover;">
+                <h4 class="font font-weight-bold text-light text-center" style="padding: 12px;  border-radius: 30px; box-shadow: 0px 0px 20px yellow; background-color: brown;"> Mr. T.K. Ranjan</h4>
+                <img class="card-img-top ml-1 md-2" src="static/images/stu1.jpg" style="width: 340px; height: 340px; border-radius: 30px;" alt="Card image cap">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <footer class="text-light">
+                      <h4> Company : TCS</h4>
+                      <h4> Package : 8.0lk </h4>
+                    </footer>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow" style="border-radius: 30px; box-shadow: 0px 0px 20px yellow; background-image: url('/static/images/back2.jpg'); width: 500; height: 500; background-repeat: no-repeat; background-size: cover;">
+                <h4 class="font font-weight-bold text-light text-center" style="padding: 12px; box-shadow: 0px 0px 20px yellow; border-radius: 30px; background-color: brown;"> Mr. K. Raj</h4>
+                <img class="card-img-top ml-1 md-2" src="static/images/stu2.jpg" style="width: 340px; height: 340px; border-radius: 30px; " alt="Card image cap">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <footer class="text-light">
+                      <h4> Company : WIPRO</h4>
+                      <h4> Package : 6.5lk </h4>
+                    </footer>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow" style="border-radius: 30px; box-shadow: 0px 0px 20px yellow; background-image: url('/static/images/back2.jpg'); width: 500; height: 500; background-repeat: no-repeat; background-size: cover;background-color: blue;">
+                <h4 class="font font-weight-bold text-light text-center" style="padding: 12px; box-shadow: 0px 0px 20px yellow; border-radius: 30px; background-color: brown;"> Mr. K.V Nag</h4>
+                <img class="card-img-top ml-1 md-2" src="static/images/stu3.jpg" style="width: 340px; height: 340px; border-radius: 30px; " alt="Card image cap">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <footer class="text-light">
+                      <h4> Company : IBM</h4>
+                      <h4> Package : 4.5lk </h4>
+                    </footer>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </main>
+
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="#" class=" btn btn-success">Back to top</a>
+        </p>
+      </div>
+    </footer>
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    {% include 'cdnlines.html' %}
+</head>
+    <style>
+        input[name]{
+            margin-top: -10px;
+        }
+        input[value]{
+            margin-top: 15px;
+        }
+        label{
+            padding: 3%;
+        }
+        form{
+            border: 3px green solid;
+            box-shadow: 0px 0px 20px rgb(13, 156, 53);
+            padding: 15px;
+            border-radius: 10px;
+            /* background-color:; */
+            background-image: url('/static/images/regi.webp'); width: 500; height: 500; background-repeat: no-repeat; background-size: cover; 
+
+        }
+        h1{
+            border: 3px blue solid;
+            box-shadow: 0px 0px 20px rgb(13, 156, 53);
+            /* padding: 15px; */
+            border-radius: 30px;
+        }
+        body{
+            background-image: url('/static/images/regi.webp'); width: 500; height: 500; background-repeat: no-repeat; background-size: cover; 
+        }
+    </style>
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <div class="offset-md-4 col-md-4 mt-5">
+                <h1 class="text-center font-weight-bold text-warning ">Login Here</h1>
+                <form method="post" class="mt-5">
+                    {% csrf_token %}
+                    <label class="text-light font-weight-bold">Username:</label>
+                    <input type="text" name="username" class="form-control">
+                    <label class="text-light font-weight-bold">Password:</label>
+                    <input type="password" name="password" class="form-control">
+                    <center>
+                        <input type="submit" name="" value="Login" class="btn btn-outline-success">
+                        <input type="reset" name="" value="Cancel" class="btn btn-outline-danger"><br>
+                        <a href="{% url 'register' %}" class="btn btn-primary btn-lg mt-3">Register Now</a>
+                    </center>
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>

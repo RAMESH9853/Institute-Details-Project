@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    {% include 'navbar.html' %}
+    {% block content %}
+    <style>
+         body{
+            background-image: url('/static/images/img6.jpg'); width: 500; height: 500; background-repeat: no-repeat; background-size: cover; 
+        }
+    </style>
+    <h2 class="text-center text-warning">Gallery Page</h2>
+    <div class="container-fluid mt-3 md-5">
+        <div class="row">
+            <div class="col-md-4 mt-4">
+                <img src="{% static 'images/img1.jpg' %}" class="img-thumbnail" style="width:80%; height:80%; border:2px yellowgreen solid; border-radius: 30%;">
+            </div>
+            <div class="col-md-4 mt-4">
+                <img src="{% static 'images/img2.jpg' %}" class="img-thumbnail" style="width:80%; height:80%;border:2px yellowgreen solid; border-radius: 30%">
+            </div>
+            <div class="col-md-4 mt-5">
+                <img src="{% static 'images/img3.jpg' %}" class="img-thumbnail" style="width:80%; height:80%; border:2px yellowgreen solid; border-radius: 30% ">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 md-4">
+                <img src="{% static 'images/img4.jpg' %}" class="img-thumbnail" style="width:90%; height:90%;  border:2px yellowgreen solid; border-radius: 30%;">
+            </div>
+            <div class="col-md-4">
+                <img src="{% static 'images/img5.jpg' %}" class="img-thumbnail" style="width:90%; height:90%; border:2px yellowgreen solid; border-radius: 30%;">
+            </div>
+            <div class="col-md-4">
+                <img src="{% static 'images/img6.webp' %}" class="img-thumbnail" style="width:90%; height:90%; border:2px yellowgreen solid; border-radius: 30%; ">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 mt-4">
+                <img src="{% static 'images/img7.webp' %}" class="img-thumbnail" style="width:90%; height:90%; border:2px yellowgreen solid; border-radius: 30%; ">
+            </div>
+            <div class="col-md-4">
+                <img src="{% static 'images/img8.webp' %}" class="img-thumbnail" style="width:90%; height:90%; border:2px yellowgreen solid; border-radius: 30%; ">
+            </div>
+            <div class="col-md-4">
+                <img src="{% static 'images/img9.webp' %}" class="img-thumbnail" style="width:90%; height:90%; border:2px yellowgreen solid; border-radius: 30%; ">
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+    <h4>Thank You</h4>
+</body>
+</html>

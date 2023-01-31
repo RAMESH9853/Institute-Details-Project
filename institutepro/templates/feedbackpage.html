@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    {% include 'cdnlines.html' %}
+    </head>
+    {% include 'navbar.html' %}
+    {% block content %}
+    
+    <style>
+        input[placeholder]{
+            padding: 100px;
+            padding-right: 200px;
+        }
+        body{
+            background-image: url('/static/images/feed.jpeg'); width: 500; height: 500; background-repeat: no-repeat; background-size: cover; 
+        }
+        h2{
+            border: 3px cyan solid;
+            box-shadow: 0px 0px 20px rgb(13, 156, 53);
+            /* padding: 15px; */
+            border-radius: 30px;
+        }
+    </style>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="offset-md-4 col-md-4 mt-4">
+                <h2 class="text-center md-3 text-warning">Feedback Page</h2>
+                <form method="POST" class="mt-4">
+                    {% csrf_token %}
+                    <select name="user" class="mt-5">
+                        <option value="{{ request.user }}">{{ request.user }}</option>
+                    </select>
+                    <textarea name="feedback"  cols="90" rows="5" placeholder="Please give feedback here..."></textarea>
+                    <!-- <input type="datetime-local" name="date"> -->
+                    <div class="text-left mt-3">
+                        <input type="Submit" value="Feedback" class="btn btn-success btn-lg">
+                        <input type="reset"  value="Cancel" class="btn btn-danger btn-lg">
+                    </div>
+                    <div class="text-center mt-2 text-light">
+                        {% if data %}
+                            {% for i in data %}
+                                <h5 class="text-right mr-5">{{ i.content }}</h5>
+                                    <h6 class="text-right mr-5">{{ i.date }}</h6>
+                                    <h6 class="text-right mr-5 font-italic">{{ i.user_name }}, Thank You..</h6>
+
+                                    {% endfor %}
+                            {% else %}
+                        <h5 class="text-light mt-4 font-weight-bold">No Feedback available</h5>
+                        {% endif %}
+                            </div>
+                                <blockquote class="blockquote text-center font-weight-bold text-success">
+                                    <footer class="blockquote-footer text-primary text-right"><cite title="The Greek Way">{{ request.user }}</cite>
+                                </blockquote>
+                                </form>
+                </div>
+        </div>
+    </div>  
+    {% endblock %}
+    <h3>Thank You</h3>
+</body>
+</html>

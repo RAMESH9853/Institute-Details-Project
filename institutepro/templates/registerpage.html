@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    {% include 'cdnlines.html' %}
+</head>
+<style>
+     form{
+            border: 3px green solid;
+            box-shadow: 0px 0px 20px rgb(13, 156, 53);
+            padding: 15px;
+            border-radius: 10px;
+            background-image: url('/static/images/regi.webp'); width: 500; height: 500; background-repeat: no-repeat; background-size: cover; 
+
+    }
+     body{
+        background-image: url('/static/images/regi2.jpg'); width: 500; height: 500; background-repeat: no-repeat; background-size: cover; 
+
+     }
+     
+</style>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Register Form</h2>
+        <div class="row">
+            <div class="offset-md-3 col-md-6 mt-3">
+                <form method="POST" class="text-light" >
+                    {% csrf_token %}
+                    First Name: &ensp;{{ form.first_name }}<br>
+                    Last Name: &ensp;{{ form.last_name }} <br>
+                    Email: &ensp; &ensp; &ensp; &ensp;{{ form.email }} <br>
+                    Username: &ensp;{{ form.username }} <br>
+                    Password: &ensp;&ensp;{{ form.password }} <br>
+                    <center>
+                    <input type="submit" value="Register" class="mt-3 btn-warning">
+                    <input type="reset"  value="Clear" class="btn-danger">
+                </center>
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>

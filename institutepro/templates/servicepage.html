@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body style="background-image: url('/static/images/back.jpg'); width: 500; height: 500; background-repeat: no-repeat; background-size: cover;">
+    {% include 'navbar.html' %}
+    {% block content %}
+    <style>
+         body{
+            background-image: url('/static/images/img6.jpg'); width: 500; height: 500; background-repeat: no-repeat; background-size: cover; 
+        }
+    </style>
+    <h2 class="text-center text-white">Service Page</h2>
+    <h2 class="text-center text-white mt-5">NTH - Course</h2>
+    {% if course %}
+    <div class="container">
+        <div class="row">
+            <div class="offset-md-0 col-md-12">
+                <table class="table table-bordered text-center">
+                    <thead class="bg-success text-white">
+                        <tr>
+                            <th>Course Name</th>
+                            <th>Fee</th>
+                            <th>Duration</th>
+                            <th>Start Date</th>
+                            <th>Trainer Name</th>
+                            <th>Trainer Exp</th>
+                            <th>Training Mode</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-dark text-white">
+                        {% for i in course %}
+                        <tr>
+                            <td>{{ i.course_name }}</td>
+                            <td>{{ i.fee }}</td>
+                            <td>{{ i.duration }}</td>
+                            <td>{{ i.start_date }}</td>
+                            <td>{{ i.trainer_name }}</td>
+                            <td>{{ i.trainer_exp }}</td>
+                            <td>{{ i.training_mode }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    {% else %}
+    <h3>No New Batch</h3>
+    {% endif %}
+
+
+
+
+    {% endblock %}
+</body>
+</html>
